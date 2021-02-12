@@ -8,4 +8,4 @@ Website created using
    <li>HTML/CSS</li>
    <li>Bootstrap 4</li>
 </ul>
-Visit the website at : <a href="https://magnovite.in/">Here</a>
+Visit the website at : <a href="https://magnovite2021.firebaseapp.com/">Here</a>
