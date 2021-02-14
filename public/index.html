@@ -9,30 +9,28 @@
   <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
   <script>
     setTimeout(function(){
-    window.location.replace('landing.html'); 
-    }, 6000);
+      window.location.replace('landing.html'); 
+    }, 7000);
   </script>
 
 </head>
 <body>
 <div class="title" style="margin-top: 70px;">
-  <img src="images/newmg1.png" style="height: 200px; width: 50%;"><br>
-  <img src="images/newlogo.png" style="height: 50%; width: 30%; position: relative; top: -35px;">
+  <img src="images/logo_yellow.png" style="height: 50%; width: 30%; position: relative; top: -35px;">
     <h1 style="margin-top: 40px;">
-        <span>R</span>
-        <span>E</span>
-        <span>N</span>
-        <span>A</span>
+        <span>B</span>
+        <span>O</span>
+        <span>O</span>
+        <span>T</span>
         <span>I</span>
-        <span>S</span>
-        <span>S</span>
-        <span>A</span>
         <span>N</span>
-        <span>C</span>
-        <span>E</span>
+        <span>G</span>
+        <span> </span>
+        <span>U</span>
+        <span>P</span>
     </h1>
   
-    <div style="margin-top: 200px;">
+    <div style="margin-top: 110;">
 	</div>
 	</div>
 <!-- partial:index.partial.html -->
@@ -62,11 +60,19 @@ a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white
   background: #edf3f8;
   color: #212121;
 }
+
+@font-face {
+	font-family: 'DOS';
+	src: url("css/fonts/Perfect DOS VGA 437.ttf");
+	font-weight: 300;
+	font-style: normal
+}
+
 h1 span{
+  font-family: "DOS";
 	opacity: 0;
 	display: inline-block;
 	animation: animate 1s linear forwards;
-
 }
 
 @keyframes animate{
@@ -86,49 +92,43 @@ h1 span:nth-child(1){
 }
 
 h1 span:nth-child(2){
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(3){
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(4){
-	animation-delay: 1s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(5){
-	animation-delay: 2s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(6){
-	animation-delay: 2.5s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(7){
-	animation-delay: 2.75s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(8){
-	animation-delay: 3s;
+	animation-delay: 0.5s;
 }
 
 h1 span:nth-child(9){
-	animation-delay: 3.5s;
+	animation-delay: 1.0s;
 }
 
 h1 span:nth-child(10){
-	animation-delay: 3.75s;
+	animation-delay: 1.5s;
 }
 
 h1 span:nth-child(11){
-	animation-delay: 4.25s;
-}
-h1 span:nth-child(12){
-	animation-delay: 4.25s;
-}
-h1 span:nth-child(13){
-	animation-delay: 3s;
+	animation-delay: 2.0s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -155,24 +155,26 @@ h1 span:nth-child(13){
   text-align: center;
   width: 100%;
 }
+
 .title h1 {
   position: relative;
   color: #C32148;
   font-weight: 600;
-  font-size: 500%;
+  font-size: 347%;
   padding: 0;
   margin: 0;
   line-height: 1;
   text-shadow: 0 0 100px #000;
 }
+
 .title h1 span {
   font-weight: 600;
   padding: 0;
   margin: 0;
   /* text-transform: uppercase; */
-	
  color:white;
 }
+
 .title h3 {
   font-weight: 200;
   font-size: 30px;
@@ -182,21 +184,25 @@ h1 span:nth-child(13){
   letter-spacing: 2px;
   text-shadow: 0 0 30px #000155;
 }
+
 @media(max-width: 550px){
   .title h1{
     font-size: 25px; 
   }
 }
+
 @media(max-width: 650px){
   .title h1{
     font-size: 35px; 
   }
 }
+
 @media(max-width: 770px){
   .title h1{
     font-size: 45px; 
   }
 }
+
 @media(max-width: 850px){
   .title h1{
     font-size: 50px; 
