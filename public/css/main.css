@@ -30,6 +30,12 @@
 	font-style: normal
 }
 
+@font-face {
+	font-family: 'DOS';
+	src: url("fonts/Perfect DOS VGA 437.ttf");
+	font-weight: 300;
+	font-style: normal
+}
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
@@ -633,7 +639,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 100px;
+	width: 180px;
 	height: 70%;
 	max-height: 750px;
 	-webkit-box-orient: vertical;
@@ -675,7 +681,7 @@ body {
 	top: 3px;
 	left: 10px;
 	color:darkgrey;
-	font-size: 14px;
+	font-size: 38px;
 	font-weight: 300
 }
 
@@ -2285,4 +2291,9 @@ body {
 		left: 55% !important;
 		top: 20% !important;
 	}
+}
+
+.dos-font {
+	font-family: DOS;
+    font-variant-caps: all-petite-caps;
 }
