@@ -1458,6 +1458,10 @@ body {
 	background-image: url("../images/about-history.jpg")
 }
 
+.about--options>a:nth-child(4) {
+	background-image: url("../images/abt-psycho.jpg")
+}
+
 .about--options h3 {
 	position: absolute;
 	text-align: center;
