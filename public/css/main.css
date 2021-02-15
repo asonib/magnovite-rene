@@ -1404,6 +1404,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	width: 1300px;
 	max-width: 1000px;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
