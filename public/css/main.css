@@ -32,7 +32,7 @@
 
 @font-face {
 	font-family: 'DOS';
-	src: url("fonts/Perfect DOS VGA 437.ttf");
+	src: url("fonts/VCR_OSD_MONO_1.001.ttf");
 	font-weight: 300;
 	font-style: normal
 }
@@ -337,7 +337,7 @@ body {
 	width: 2px;
 	height: 70%;
 	max-height: 750px;
-	background-color: #555;
+	background-color: #fff;
 	opacity: .35;
 	z-index: 10
 }
@@ -640,7 +640,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 180px;
+	width: 182px;
 	height: 70%;
 	max-height: 750px;
 	-webkit-box-orient: vertical;
@@ -660,8 +660,9 @@ body {
 .side-nav>li {
 	position: relative;
 	top: -5px;
-	color: #fff;
-	font-size: 6px;
+	left: -2px;
+	color: #FFBB18;
+	font-size: 19px;
 	cursor: pointer
 }
 
@@ -716,9 +717,9 @@ body {
 
 
 .side-nav li.is-active {
-	animation: blinker 4s linear infinite;
-	-webkit-transition: color .4s ease-in-out;
-	transition: color .4s ease-in-out
+	animation: blinker 2s linear infinite;
+	-webkit-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out
 }
 
 .side-nav li.is-active span {
@@ -729,8 +730,10 @@ body {
 }
 
 .side-nav li.is-active::before {
-	color: #FFBB18
+	color: #FFBB18;
+	font-size: 38px;
 }
+
 .home-nav{
 	animation: none !important;
 }
