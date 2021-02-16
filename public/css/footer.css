@@ -29,10 +29,10 @@ a {
 }
 
 .generic-anchor {
-  color: #8DB9ED;
+  color: white;
 }
 .generic-anchor:visited {
-  color: #8DB9ED;
+  color: white;
 }
 .generic-anchor:hover {
   color: #ccc;
@@ -62,7 +62,7 @@ main {
 }
 
 footer {
-  background: #373737;
+  background: linear-gradient(to bottom left, #BE39C8 40%, #300F66 100%);
   margin-top: auto;
   width: 100%;
 }
