@@ -703,15 +703,15 @@ body {
 }
 
 .side-nav li:nth-child(3)::before {
-	content: "About Us"
+	content: "Gallery"
 }
 
 .side-nav li:nth-child(4)::before {
-	content: "Contact Us"
+	content: "About Us"
 }
 
 .side-nav li:nth-child(5)::before {
-	content: "Gallery"
+	content: "Contact Us"
 }
 
 
@@ -2055,8 +2055,10 @@ body {
 }
 
 .gallery h2 {
+	font-size: 55px;
+    font-family: DOS;
+    font-variant-caps: all-petite-caps;
 	margin: 0 0 10px 0;
-	font-size: 30px;
 	text-align: center
 }
 
