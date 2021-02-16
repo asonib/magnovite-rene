@@ -1,22 +1,18 @@
+@font-face {
+	font-family: 'DOS';
+	src: url("fonts/VCR_OSD_MONO_1.001.ttf");
+	font-weight: 300;
+	font-style: normal
+}
+
 body{
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Regular.eot");
-    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
-    font-weight: 400;
+    font-family: 'DOS';    
 }
-table{
-    width: 100%;
-    border-spacing: 15px;
-}
-td{
-    border: 2px solid black;
-    padding: 13px;
-    background-color:#330885;
-    color: white;
-    text-align: center;
-}
-td a{
-    color: white;
+
+#main-iframe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #insta{
@@ -25,17 +21,18 @@ td a{
 }
 
 #contact-incharge{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 650px;
+    text-align: center;
 }
 
-#contact-incharge div{    
-    margin: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+#contact-incharge div{
+    margin-top: 4px;        
+    margin-bottom: 4px;
     background-color: #000000;
     padding: 3px;
     opacity: 85%;
@@ -43,9 +40,9 @@ td a{
 
 .contact{
     display: inline-block;
-    height: 75px;
-    font-size: 20px;    
-    line-height: 40px;
+    height: 45px;
+    font-size: 14px;    
+    line-height: 25px;
     border-radius: 25px;    
     text-align: center;
     padding: 8px 5px 8px 5px !important;
@@ -58,4 +55,16 @@ td a{
     padding-right: 10px;
     color: #FFBB18;
     text-decoration-line: none;
+}
+
+@media (max-width:900px) {
+    #main-iframe{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    #main-iframe{
+        flex-direction: column;
+    }
 }

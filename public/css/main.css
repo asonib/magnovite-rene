@@ -1553,18 +1553,32 @@ body {
 .contact--lockup {
 	width: 100%;
 	max-width: 75%;
-	margin: 120px auto;
+	margin: 100px auto;
 }
 
 .contact--lockup iframe{
-	padding-left: 55px;
+	padding-left: 85px;
 	width: 100%;
-	height: 750px;
+	height: 600px;
+}
+
+.contact--lockup h1{
+	font-family: 'DOS';
+	font-size: 38px;
+	margin: 0px;
 }
 
 @media (max-width: 1180px) {
 	.contact--lockup {
 		max-width: 90%
+	}
+}
+
+@media (max-width: 900px){
+	.contact--lockup iframe{
+		padding-left: 0px;
+		width: 100%;
+		height: 600px;
 	}
 }
 
@@ -1576,6 +1590,11 @@ body {
 		justify-content: center
 	}
 	
+	.contact--lockup iframe{
+		padding-left: 0px;
+		width: 100%;
+		height: 750px;
+	}
 }
 
 .dance_gal{

@@ -11,35 +11,35 @@
 
 <body>
     <div class="container">
-        <div class="row" style="display: flex;flex-direction: row; justify-content: space-evenly;">
+        <div class="row" id="main-iframe">
             <div class="col-6" style="display: flex;flex-direction: column; justify-content: flex-start;">
                 <div class="col-12" style="text-align: center;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7051927903244!2d77.43697355642314!3d12.86230804837226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb87179b78abbd44c!2sChrist%20University%20Kengeri%20Campus!5e0!3m2!1sen!2sin!4v1613382143739!5m2!1sen!2sin" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe style="filter: invert(90%);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.7051927903244!2d77.43697355642314!3d12.86230804837226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb87179b78abbd44c!2sChrist%20University%20Kengeri%20Campus!5e0!3m2!1sen!2sin!4v1613382143739!5m2!1sen!2sin" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-                <div class="col-12" id="contact-incharge" style=" margin-top:10px;">
+                <div class="col-12" id="contact-incharge">
                     <div class="col-4 contact">
-                        <a href="mailto: sheryl.jacob@btech.christuniversity.in">Sheryl Jacob</a><br/>
+                        <a href="mailto:sheryl.jacob@btech.christuniversity.in">SHERYL JACOB</a><br/>
                         <a href="tel:+919901801673">9901801673</a>
                     </div>                    
                     <div class="col-4 contact">
-                        <a href="mailto: roshan.kirpalani@mba.christuniversity.in">Roshan Anand Kirpalani</a><br/>
-                        <a href="tel:+919845572302">9845572302</a>
-                    </div>
-                    <div class="col-4 contact">
-                        <a href="mailto: s.shrinithi@science.christuniversity.in">Shrinithi S</a><br/>
+                        <a href="mailto:s.shrinithi@science.christuniversity.in">SHRINITHI S</a><br/>
                         <a href="tel:+919444270410">9444270410</a>
-                    </div>  
+                    </div>                      
                     <div class="col-4 contact">
-                        <a href="mailto: yedururi.sundar@barch.christuniversity.in">Yedururi Sundar Charan</a><br/>
-                        <a href="tel:+916302229865">6302229865</a>
-                    </div>                  
-                    <div class="col-4 contact">
-                        <a href="mailto: sudharshanaa.bs@mba.christuniversity.in">Sudharshana</a><br/>
+                        <a href="mailto:sudharshanaa.bs@mba.christuniversity.in">SUDHARSHANA</a><br/>
                         <a href="tel:+919742747527">9742747527</a>
                     </div>
                     <div class="col-4 contact">
-                        <a href="mailto: tejas.jayan@btech.christuniversity.in">Tejas Jayan</a><br/>
+                        <a href="mailto:tejas.jayan@btech.christuniversity.in">TEJAS JAYAN</a><br/>
                         <a href="tel:+919742840045">9742840045</a>
+                    </div>
+                    <div class="col-4 contact">
+                        <a href="mailto:yedururi.sundar@barch.christuniversity.in">YEDURURI SUNDAR CHARAN</a><br/>
+                        <a href="tel:+916302229865">6302229865</a>
+                    </div>
+                    <div class="col-4 contact">
+                        <a href="mailto:roshan.kirpalani@mba.christuniversity.in">ROSHAN ANAND KIRPALANI</a><br/>
+                        <a href="tel:+919845572302">9845572302</a>
                     </div>
                 </div>
             </div>
@@ -98,6 +98,96 @@
             </div>
         </div>
     </div>    
+
+    <script>
+        function initMap() {
+            // Styles a map in night mode.
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 40.674, lng: -73.945 },
+                zoom: 12,
+                styles: [
+                { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+                { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+                { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+                {
+                    featureType: "administrative.locality",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#d59563" }],
+                },
+                {
+                    featureType: "poi",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#d59563" }],
+                },
+                {
+                    featureType: "poi.park",
+                    elementType: "geometry",
+                    stylers: [{ color: "#263c3f" }],
+                },
+                {
+                    featureType: "poi.park",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#6b9a76" }],
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry",
+                    stylers: [{ color: "#38414e" }],
+                },
+                {
+                    featureType: "road",
+                    elementType: "geometry.stroke",
+                    stylers: [{ color: "#212a37" }],
+                },
+                {
+                    featureType: "road",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#9ca5b3" }],
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "geometry",
+                    stylers: [{ color: "#746855" }],
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "geometry.stroke",
+                    stylers: [{ color: "#1f2835" }],
+                },
+                {
+                    featureType: "road.highway",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#f3d19c" }],
+                },
+                {
+                    featureType: "transit",
+                    elementType: "geometry",
+                    stylers: [{ color: "#2f3948" }],
+                },
+                {
+                    featureType: "transit.station",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#d59563" }],
+                },
+                {
+                    featureType: "water",
+                    elementType: "geometry",
+                    stylers: [{ color: "#17263c" }],
+                },
+                {
+                    featureType: "water",
+                    elementType: "labels.text.fill",
+                    stylers: [{ color: "#515c6d" }],
+                },
+                {
+                    featureType: "water",
+                    elementType: "labels.text.stroke",
+                    stylers: [{ color: "#17263c" }],
+                },
+                ],
+            });
+            }
+    </script>
 </body>
 
 </html>
