@@ -18,6 +18,7 @@ body {
   letter-spacing: 0;
   padding: 1rem;
   background-color: transparent;
+  padding-bottom: 5px;
 }
 #custom-color{
   color: grey;
@@ -99,7 +100,7 @@ img {
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, rgb(168, 52, 69) 40%, rgb(71, 26, 8) 100%);
+  background: linear-gradient(to bottom left, #BE39C8 40%, #300F66 100%);
 }
 
 .card_title {
