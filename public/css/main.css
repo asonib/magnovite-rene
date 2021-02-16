@@ -732,6 +732,7 @@ body {
 .side-nav li.is-active::before {
 	color: #FFBB18;
 	font-size: 38px;
+	text-shadow: 0px 3px black;
 }
 
 .home-nav{
@@ -1059,7 +1060,7 @@ body {
 }
 
 .work h1 {
-	margin: 0 0 20px 0;
+	margin: 20px 0 0 0;
 	font-size: 55px;
 	font-family: DOS;
     font-variant-caps: all-petite-caps;
@@ -2280,6 +2281,14 @@ body {
     background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
 }
 
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
 .card__like {
     width: 18px;
 }
@@ -2320,20 +2329,45 @@ border-top-right-radius: 12px;
 top: 0;
   
 }
+
 .card {
   margin-right: 25px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: black;
-    width: 33.3%;
+  display: inline-block;
+  width: 33.3%;
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
+
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
 }
+
+@media screen and (max-width: 800px) {
+	.cards {
+		display: block;
+		overflow-y: auto;
+    	height: 80vh;
+	}
+
+	.card {
+		margin-top: 20px;
+		width: 100%;
+		display: block;
+	}
+
+	.card__clock-info {
+		margin-left: 20px;
+	}
+
+	.card:hover .card__info {
+		margin-left: 10px;
+	}
+} 
 
 .card__info {
 z-index: 2;
