@@ -767,7 +767,7 @@ body {
 
 .intro--banner {
 	position: relative;
-	height: 475px
+	height: 441px;
 }
 
 
@@ -818,10 +818,9 @@ body {
 @media screen and  (min-width:800px) {
 	.mag-custom-logo {
 		margin-top: 30px;
-		margin-bottom:80px;
 		display: block !important;
 		position: static;
-		width: 50%;
+		width: 60%;
 	}
 }
 
@@ -2455,10 +2454,10 @@ border-bottom-right-radius: 12px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-
 }
 .counter_container{
+	position: absolute;
+    right: -15%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -2468,7 +2467,7 @@ border-bottom-right-radius: 12px;
   color: #FFBB18;
  }
 .abt {
-    width:500px;
+    width:555px;
  }
 .counter-sub-container{
 	margin : 20px;
@@ -2477,4 +2476,11 @@ border-bottom-right-radius: 12px;
 .counter-title span {
   font-weight: bold;
    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TODO: Remove */
+@media screen and (max-width: 600px) {
+	.counter_container {
+		display: none;
+	}
 }
