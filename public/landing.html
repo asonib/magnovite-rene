@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Magnovite 20</title>
+  <title>Magnovite 2021</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,13 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" type="image/png" href="images/newlogo.png" />
+  <link rel="icon" type="image/png" href="images/logo_shadow.png" />
   <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
 
   <!-- notification for small viewports and landscape oriented smartphones -->
   <div class="device-notification">
@@ -22,13 +24,13 @@
       <img src="images/logo.png" height="50px" width="100px" alt="ChristLogo">
     </a>
     <p class="device-notification--message">
-      Magnovite is the annual techno_cultural-design fest scheduled for
-      28-29 February 2020. Collectively, Magnovite has 5 Technical events,
-      9 Management events, 6 Architecture events, 1 Cultural event and
-      ‘Nritta’- A Mega Dance Event. Magnovite aims to be a multi-disciplinary
-      approach to innovation, achieved through a collaborative effort of the
-      best minds from different disciplines. In Magnovite, we curate a fest
-      with fusion of technology and culture to make that ambition a reality.
+      Magnovite is the annual fest scheduled for 26-27 March 2021.
+      Collectively, Magnovite has 5 Technical events, 9 Management events,
+      4 Architecture events, 4 Psychology events and 4 Cultural events.
+      Magnovite aims to be a multi-disciplinary approach to innovation,
+      achieved through a collaborative effort of the best minds from different
+      disciplines. In Magnovite, we curate a fest with fusion of technology
+      and culture to make that ambition a reality.
     </p>
   </div>
 
@@ -56,7 +58,7 @@
             </div>
           </header>
           <nav class="l-side-nav">
-            <ul class="side-nav">
+            <ul class="side-nav dos-font">
               <li class="is-active"><span></span></li>
               <li><span></span></li>
               <li><span></span></li>
@@ -68,8 +70,8 @@
             <li class="l-section section section--is-active">
               <div class="intro">
                 <div class="intro--banner">
-                  <h1 id="mag1">Ma<span id="mag">9</span>novite</h1><span id="ren">Renaissance<br></span>
-                  <h3>28-29&nbsp;Feburary&nbsp;2020</h3>
+                  <img class="mag-custom-logo" src="images/text_logo.png" />
+                  <h3>26-27 March 2021</h3>
                   <a target="_blank" href="https://forms.gle/Nid6GRc8aEHx9Za5A"
                     style="text-decoration: none; color: white;">
                     <button> Register Now - External
@@ -124,18 +126,18 @@
                                   </svg>
                                   <span class="btn-background"></span>
                                 </button><a>
-                                  <img class="magn" src="images/newlogo.png" alt="magnovite">
+                                  <img class="magn banner-img" src="images/logo_shadow.png" style="height: auto;" alt="magnovite">
                 </div>
                 <div class="abt">
                   <h2>About Magnovite:</h2>
                   <p>
-                    Magnovite is the annual techno_cultural-design fest scheduled for
-                    28-29 February 2020. Collectively, Magnovite has 5 Technical events,
-                    9 Management events, 6 Architecture events, 1 Cultural event and
-                    ‘Nritta’- A Mega Dance Event. Magnovite aims to be a multi-disciplinary
-                    approach to innovation, achieved through a collaborative effort of the
-                    best minds from different disciplines. In Magnovite, we curate a fest
-                    with fusion of technology and culture to make that ambition a reality.
+                    Magnovite is the annual fest scheduled for 26-27 March 2021.<br>
+                    Collectively, Magnovite has 5 Technical events, 9 Management events,
+                    4 Architecture events, 4 Psychology events and 4 Cultural events.
+                    Magnovite aims to be a multi-disciplinary approach to innovation,
+                    achieved through a collaborative effort of the best minds from different
+                    disciplines. In Magnovite, we curate a fest with fusion of technology
+                    and culture to make that ambition a reality.
                   </p>
                 </div>
                 <div class="timer">
@@ -152,65 +154,90 @@
               <div class="work">
                 <h1>Events</h1>
                 <div class="work--lockup">
-                  <ul class="slider">
-                    <li class="slider--item slider--item-left">
-                      <a href="bgdesign.html">
-                        <div class="slider--item-image">
-                          <img src="images/work-victory.jpg" alt="Victory">
-                        </div>
-                        <p class="slider--item-title">Design Events</p>
-                        <p class="slider--item-description">School of <br>Architecture</p>
-                      </a>
-                    </li>
-                    <li class="slider--item slider--item-center">
-                      <a href="bgtech.html">
-                        <div class="slider--item-image">
-                          <img src="images/work-alex-nowak.jpg" alt="Alex Nowak">
-                        </div>
-                        <p class="slider--item-title">Technical Events</p>
-                        <p class="slider--item-description">School of Engineering and Technology</p>
-                      </a>
-                    </li>
-                    <li class="slider--item slider--item-right">
-                      <a href="bgmanage.html">
-                        <div class="slider--item-image">
-                          <img src="images/work-metiew-smith.jpg" alt="Metiew and Smith">
-                        </div>
-                        <p class="slider--item-title">Managerial Events</p>
-                        <p class="slider--item-description">School of Business and Management</p>
-                      </a>
-                    </li>
+                  <!-- Events Cards -->
+                  <section class="cards">
                     
-                  </ul>
-                  <div class="slider--prev">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                        <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="slider--next">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                        <path
-                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                      </g>
-                    </svg>
-                  </div>
+                    
+                    <div class="card card--1">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+                  
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        
+                        <h2 class="card__title">Technical Events</h2>
+                        <span class="card__category"> School of Engineering and Technology</span>
+                  
+                      </div>
+                    </div>
+                  
+                    <a href="" style="text-decoration: none;">
+                    <article class="card card--2">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+                  
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Management Events</h2>
+                        <span class="card__category"> School of Business and Management</span>
+                      </div>
+                    </article>
+                    </a>
+
+                    <a href="" style="text-decoration: none;">
+                    <article class="card card--2">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+                  
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Management Events</h2>
+                        <span class="card__category"> School of Business and Management</span>
+                      </div>
+                    </article>
+                  </a>
+
+                  <a href="" style="text-decoration: none;">
+                    <article class="card card--2">
+                      <div class="card__info-hover">
+                        <div class="card__clock-info">
+                          <span class="card__time">See More</span>
+                        </div>
+                  
+                      </div>
+                      <div class="card__img"></div>
+                      <a href="#" class="card_link">
+                        <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                        <h2 class="card__title">Management Events</h2>
+                        <span class="card__category"> School of Business and Management</span>
+                      </div>
+                    </article>
+                  </a>
+                  </section>
+                  
                 </div>
               </div>
-              <div class="dance_div">
-                <a href="bgfootloose.html" class="dance_link"><img src="images/dance.png" class="dance"><br>
-                  <h1 class="dance_text1">FOOTLOOSE</h1><br>
-                  <h2 class="dance_text2">Cultural Event</h4class="dance_text">
-                </a>
-              </div>
+              
             </li>
             <li class="l-section section" id="2">
               <div class="about">
@@ -232,26 +259,29 @@
                   </a>
                 </div>
                 <div class="about--options">
-                  <a href="https://christuniversity.in/academics/faculty-of-engineering/">
+                  <a target="_blank" href="https://christuniversity.in/academics/Bangalore-Kengeri-Campus/school-of-engineering-and-technology">
                     <h3>School of Engineering and Technology</h3>
                   </a>
-                  <a target="_blank" href="https://christuniversity.in/academics/school-of-architecture">
+                  <a target="_blank" href="https://christuniversity.in/departments/bangalore%20kengeri%20campus/school%20of%20architecture/school%20of%20architecture">
                     <h3>School of Architecture</h3>
                   </a>
-                  <a target="_blank" href="https://christuniversity.in/academics/management">
+                  <a target="_blank" href="https://christuniversity.in/academics/Main-Campus/school-of-business-and-management">
                     <h3>School of Business and Management</h3>
+                  </a>
+                  <a target="_blank" href="https://christuniversity.in/academics/Main-Campus/school-of-social-sciences">
+                    <h3>School of Social Sciences</h3>
                   </a>
                 </div>
                 <div class="abt1">
                   <h2>About Magnovite:</h2>
                   <p>
-                    Magnovite is the annual techno_cultural-design fest scheduled for
-                    28-29 February 2020. Collectively, Magnovite has 5 Technical events,
-                    9 Management events, 6 Architecture events, 1 Cultural event and
-                    ‘Nritta’- A Mega Dance Event. Magnovite aims to be a multi-disciplinary
-                    approach to innovation, achieved through a collaborative effort of the
-                    best minds from different disciplines. In Magnovite, we curate a fest
-                    with fusion of technology and culture to make that ambition a reality.
+                    Magnovite is the annual fest scheduled for 26-27 March 2021. 
+                    Collectively, Magnovite has 5 Technical events, 9 Management events, 
+                    4 Architecture events, 4 Psychology events and 4 Cultural events. 
+                    Magnovite aims to be a multi-disciplinary approach to an innovation, 
+                    achieved through a collaborative effort of the best minds from different 
+                    disciplines. In Magnovite, we curate a fest with fusion of technology 
+                    and culture to make that ambition a reality.
                   </p>
                 </div>
               </div>
@@ -264,7 +294,7 @@
               </div>
             </li>
             <li class="l-section section" id="galleryli">
-              
+
               <div class="dance_gal">
                 <img src="images/dance.png" class="dance1">
                 <a href="bgfootloose.html" class="dance_link"><h1 class="dance_text1_gal">FOOTLOOSE</h1></a>
@@ -296,6 +326,142 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="js/functions-min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script>
+    /* ---- particles.js config ---- */
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 125,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+
+    /* ---- stats.js config ---- */
+
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
 </body>
 
 </html>

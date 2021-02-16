@@ -30,6 +30,12 @@
 	font-style: normal
 }
 
+@font-face {
+	font-family: 'DOS';
+	src: url("fonts/VCR_OSD_MONO_1.001.ttf");
+	font-weight: 300;
+	font-style: normal
+}
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
@@ -279,7 +285,7 @@ body {
 }
 
 body {
-    background-image: url("../images/bg.png");
+	background-image: url("../images/bg_mag_21.jpg");
     background-repeat: no-repeat;
   	background-size: cover;
 	background-color:black;
@@ -331,7 +337,7 @@ body {
 	width: 2px;
 	height: 70%;
 	max-height: 750px;
-	background-color: #555;
+	background-color: #fff;
 	opacity: .35;
 	z-index: 10
 }
@@ -339,7 +345,7 @@ body {
 	height : 140%;
 	width: 20%;
 	position: absolute;
-	top: 15%; 
+	top: 15%;
 	left: -4.5%;
 }
 
@@ -592,7 +598,7 @@ body {
 	}
 }
 .header--cta {
-	
+
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	padding: 0 20px;
@@ -601,7 +607,7 @@ body {
 	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
-	background-color: darkred;
+	background-color: #FFBB18;
 	border: none;
 	opacity: 0;
 	visibility: hidden;
@@ -614,7 +620,7 @@ body {
 }
 
 .header--cta.is-active {
-	
+
 	opacity: 1;
 	visibility: visible;
 	-webkit-transition: opacity .4s ease-in-out .4s;
@@ -628,12 +634,13 @@ body {
 }
 
 .side-nav {
+	color: #FFBB18
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 100px;
+	width: 182px;
 	height: 70%;
 	max-height: 750px;
 	-webkit-box-orient: vertical;
@@ -653,8 +660,9 @@ body {
 .side-nav>li {
 	position: relative;
 	top: -5px;
-	color: #fff;
-	font-size: 6px;
+	left: -2px;
+	color: #FFBB18;
+	font-size: 19px;
 	cursor: pointer
 }
 
@@ -670,12 +678,19 @@ body {
 }
 
 .side-nav>li::before {
+	color: #FFBB18
 	position: absolute;
 	top: 3px;
 	left: 10px;
 	color:darkgrey;
-	font-size: 14px;
+	font-size: 38px;
 	font-weight: 300
+}
+
+.side-nav li::before{
+	font-weight: 800;
+	font-size: 38px;
+	color: #FFBB18;
 }
 
 .side-nav li:nth-child(1)::before {
@@ -702,9 +717,9 @@ body {
 
 
 .side-nav li.is-active {
-	animation: blinker 4s linear infinite;
-	-webkit-transition: color .4s ease-in-out;
-	transition: color .4s ease-in-out
+	animation: blinker 2s linear infinite;
+	-webkit-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out
 }
 
 .side-nav li.is-active span {
@@ -715,8 +730,10 @@ body {
 }
 
 .side-nav li.is-active::before {
-	color: #fff
+	color: #FFBB18;
+	font-size: 38px;
 }
+
 .home-nav{
 	animation: none !important;
 }
@@ -752,25 +769,6 @@ body {
 	height: 475px
 }
 
-.intro--banner::before {
-	content: "";
-	position: absolute;
-	bottom: 3px;
-	left: -15px;
-	right: 0;
-	height: 2px;
-	background-color: #282828
-}
-
-.intro--banner::after {
-	content: "";
-	position: absolute;
-	bottom: 1px;
-	left: 0;
-	width: 30px;
-	height: 4px;
-	background-color: darkgreen;
-}
 
 .intro--banner h1 {
 	position: relative;
@@ -795,7 +793,7 @@ body {
 	left: 23px;
 	right: 0;
 	height: 100%;
-	background-color: darkred;
+	background-color: #FFBB18;
 	z-index: -1;
 	-webkit-transition: left .2s ease-in-out;
 	transition: left .2s ease-in-out
@@ -816,7 +814,25 @@ body {
 	fill: #fff
 }
 
-.intro--banner img {
+@media screen and  (min-width:800px) {
+	.mag-custom-logo {
+		margin-top: 30px;
+		margin-bottom:80px; 
+		display: block !important; 
+		position: static; 
+		width: 50%;
+	}
+}
+
+@media screen and  (max-width:799px) {
+	.mag-custom-logo { 
+		display: block !important; 
+		position: static; 
+		width: 50%;
+	}
+}
+
+.intro--banner .banner-img {
 	position: absolute;
 	bottom: 21px;
 	right: -12px
@@ -881,7 +897,7 @@ body {
 	padding: 1em;
 	text-transform: uppercase;
   }
-  
+
 .cli > span {
 	text-align: center;
 	display: block;
@@ -892,14 +908,14 @@ body {
 		position: absolute!important;
 		top: 18%!important;
 		right: 0%;
-	}	
+	}
 }
 @media(max-width:1440px){
 	.timer{
 		position: absolute!important;
 		top: 18%!important;
 		right: -13%;
-	}	
+	}
 }
 @media (max-width: 900px) {
 	.intro--banner {
@@ -983,7 +999,7 @@ body {
 		font-size: 10px;
 		padding: 1em;
 	  }
-	  
+
 	.cli > span {
 		font-size: 15px;
 	}
@@ -1015,12 +1031,13 @@ body {
 }
 
 .work {
+	margin-right: 50px !important;
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 960px;
+	width: 1114px;
 	max-width: 80%;
 	height: 100%;
 	-webkit-box-orient: vertical;
@@ -1043,7 +1060,9 @@ body {
 
 .work h1 {
 	margin: 0 0 20px 0;
-	font-size: 35px;
+	font-size: 55px;
+	font-family: DOS;
+    font-variant-caps: all-petite-caps;
 	text-align: center
 }
 
@@ -1391,6 +1410,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	width: 1300px;
 	max-width: 1000px;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
@@ -1424,6 +1444,10 @@ body {
 
 .about--options>a:nth-child(3) {
 	background-image: url("../images/about-history.jpg")
+}
+
+.about--options>a:nth-child(4) {
+	background-image: url("../images/abt-psycho.JPG")
 }
 
 .about--options h3 {
@@ -1612,7 +1636,7 @@ body {
 		left: -10% !important;
 		font-size: 11px !important;
 	}
-	
+
 	.contact--lockup .modal{
 		padding-top: 5% !important;
 		padding: 0px;
@@ -1634,10 +1658,10 @@ body {
 		left: 0%;
 		display:inline;
 	}
+  
 	.contact--lockup .modal--options>li {
 	width: 130px;
 	margin: 0px auto 25px auto;
-	
 }
 
 .contact--lockup .modal--options li:nth-child(1) {
@@ -2136,12 +2160,12 @@ body {
 	position: absolute;
 	top: 15%;
 	left: -22%;
-	overflow-x: hidden!important; 
-    overflow-y: scroll!important; 
+	overflow-x: hidden!important;
+    overflow-y: scroll!important;
 }
-#gal::-webkit-scrollbar { 
-	display: none!important; 
-} 
+#gal::-webkit-scrollbar {
+	display: none!important;
+}
 
 #gal_button {
 	position: absolute;
@@ -2183,9 +2207,9 @@ body {
 
 .magn {
 	height: 120%;
-	width: 80%;
-	left: 50% !important;
-	top: 5% !important;
+	width: 60%;
+    left: 62% !important;
+    top: 27% !important;
 }
 
 @keyframes blinker {
@@ -2228,3 +2252,149 @@ body {
 		top: 20% !important;
 	}
 }
+
+.dos-font {
+	font-family: DOS;
+    font-variant-caps: all-petite-caps;
+}
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.card__like {
+    width: 18px;
+}
+
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+	height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-color:black
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: black;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: black;
+  color: white;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'DOS';
+	color: #FFBB18;
+	line-height: 22px;
+	font-variant-caps: all-petite-caps;
+	font-size:30px;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card__time {
+	color: white;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+.custom_btn {
+	background-color: white;
+	color: black;
+	border: 2px solid #e7e7e7;
+  }

@@ -2,257 +2,42 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Magnovite RENAISSANCE</title>
+  <title>Magnovite+ 2021</title>
   <link rel="stylesheet" href="css/index.css">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fruktur&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
   <script>
     setTimeout(function(){
-    window.location.replace('landing.html'); 
+      window.location.replace('landing.html'); 
     }, 6000);
   </script>
 
 </head>
 <body>
-<div class="title" style="margin-top: 70px;">
-  <img src="images/newmg1.png" style="height: 200px; width: 50%;"><br>
-  <img src="images/newlogo.png" style="height: 50%; width: 30%; position: relative; top: -35px;">
-    <h1 style="margin-top: 40px;">
-        <span>R</span>
-        <span>E</span>
-        <span>N</span>
-        <span>A</span>
-        <span>I</span>
-        <span>S</span>
-        <span>S</span>
-        <span>A</span>
-        <span>N</span>
-        <span>C</span>
-        <span>E</span>
-    </h1>
-  
-    <div style="margin-top: 200px;">
-	</div>
-	</div>
-<!-- partial:index.partial.html -->
+  <video autoplay muted loop id="myVideo">
+    <source src="intro.mp4" type="video/mp4">
+  </video>
 
 
 <style>
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
-.more-pens {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  z-index: 10;
-  font-family: "Montserrat";
-  font-size: 12px;
-}
-
-a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
-  font-family: "Montserrat";
-  font-size: 12px;
-  text-decoration: none;
-  background: #212121;
-  padding: 4px 8px;
-  color: #f7f7f7;
-}
-a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
-  background: #edf3f8;
-  color: #212121;
-}
-h1 span{
-	opacity: 0;
-	display: inline-block;
-	animation: animate 1s linear forwards;
-
-}
-
-@keyframes animate{
-	0%{
-		opacity: 0;
-		transform: rotateY(90deg);
-		filter: blur(10px);
-	}
-	100%{
-		opacity: 1;
-		transform: rotateY(0deg);
-		filter: blur(0);
-	}
-}
-h1 span:nth-child(1){
-	animation-delay: 0.5s;
-}
-
-h1 span:nth-child(2){
-	animation-delay: 1s;
-}
-
-h1 span:nth-child(3){
-	animation-delay: 1s;
-}
-
-h1 span:nth-child(4){
-	animation-delay: 1s;
-}
-
-h1 span:nth-child(5){
-	animation-delay: 2s;
-}
-
-h1 span:nth-child(6){
-	animation-delay: 2.5s;
-}
-
-h1 span:nth-child(7){
-	animation-delay: 2.75s;
-}
-
-h1 span:nth-child(8){
-	animation-delay: 3s;
-}
-
-h1 span:nth-child(9){
-	animation-delay: 3.5s;
-}
-
-h1 span:nth-child(10){
-	animation-delay: 3.75s;
-}
-
-h1 span:nth-child(11){
-	animation-delay: 4.25s;
-}
-h1 span:nth-child(12){
-	animation-delay: 4.25s;
-}
-h1 span:nth-child(13){
-	animation-delay: 3s;
-}
-
-@media only screen and (max-width: 600px) {
-	h1{
-		font-size: 1.6em;
-	}
-	a{
-		margin-top: 25px;
-	}
-}
-.head{
-  font-size: 300%;
-  font-family:"Cinzel",serif;
-  color: white;
-}
-
-.title {
-  z-index: 10;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-family: 'Cinzel';
-  text-align: center;
-  width: 100%;
-}
-.title h1 {
-  position: relative;
-  color: #C32148;
-  font-weight: 600;
-  font-size: 500%;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  text-shadow: 0 0 100px #000;
-}
-.title h1 span {
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-  /* text-transform: uppercase; */
-	
- color:white;
-}
-.title h3 {
-  font-weight: 200;
-  font-size: 30px;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-  letter-spacing: 2px;
-  text-shadow: 0 0 30px #000155;
-}
-@media(max-width: 550px){
-  .title h1{
-    font-size: 25px; 
-  }
-}
-@media(max-width: 650px){
-  .title h1{
-    font-size: 35px; 
-  }
-}
-@media(max-width: 770px){
-  .title h1{
-    font-size: 45px; 
-  }
-}
-@media(max-width: 850px){
-  .title h1{
-    font-size: 50px; 
+@media screen and (min-width: 1000px) {
+  #myVideo {
+    top: -24px;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 
-  css-doodle {
-    --color: @p(#f00,#0f0,#00f,#000);
-    --rule: (
-      :doodle {
-        @grid: 30x1 / 18vmin;
-        --deg: @p(-180deg, 180deg);
-      }
-      :container {
-        perspective: 30vmin;
-      }
-      :after, :before {
-        content: '';
-        background: var(--color); 
-        @place-cell: @r(100%) @r(100%);
-        @size: @r(6px);
-        @shape: heart;
-      }
-    
-      @place-cell: center;
-      @size: 100%;
-    
-      box-shadow: @m2(0 0 50px var(--color));
-      background: @m100(
-        radial-gradient(var(--color) 50%, transparent 0) 
-        @r(-20%, 120%) @r(-20%, 100%) / 1px 1px
-        no-repeat
-      );
-    
-      will-change: transform, opacity;
-      animation: scale-up 12s linear infinite;
-      animation-delay: calc(-12s / @size() * @i());
+@media screen and (max-width: 999px) {
+  #myVideo {
+    height: 100%;
+    top: -24px;
+    bottom: 0;
+  } 
+}
 
-      @keyframes scale-up {
-        0%, 95.01%, 100% {
-          transform: translateZ(0) rotate(0);
-          opacity: 0;
-        }
-        10% { 
-          opacity: 0.4; 
-        }
-        95% {
-          transform: 
-            translateZ(35vmin) rotateZ(@var(--deg));
-        }
-      }
-    )
-  }
 </style>
-<css-doodle use="var(--rule)"></css-doodle>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.6.2/css-doodle.min.js'></script>
 </body>
 </html>
