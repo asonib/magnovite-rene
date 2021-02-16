@@ -1,72 +1,119 @@
+
 <!DOCTYPE html>
 <html>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<head>
-    
-    <title>Gallery</title>
-    <link href="css/templatemo_style.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
-    <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
-    <script type="text/JavaScript" src="js/slimbox2.js"></script>
-</head>
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+ /* Track */
+::-webkit-scrollbar-track {
+  <!-- box-shadow: inset 0 0 5px magenta;  
+  border-radius: 10px;-->
+}
+ /* Handle */
+::-webkit-scrollbar-thumb {
+  background: powderblue;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: teal;
+}
+</style>
 <body>
-    <div class="contain" style="padding-left: -5%; padding-top: 5%;">
-        <div class="section">
-            <ul id="gallery_wrapper">
-                <li><a href="images/a1.png" rel="lightbox[gallery]"><img src="images/a.png" alt="image 01" /></a></li>
-                <li><a href="images/b1.png" rel="lightbox[gallery]"><img src="images/b.png" alt="image 02" /></a></li>
-                <li><a href="images/c1.png" rel="lightbox[gallery]"><img src="images/c.png" alt="image 03" /></a></li>
-                <li><a href="images/d1.png" rel="lightbox[gallery]"><img src="images/d.png" alt="image 04" /></a></li>
-                <li><a href="images/e1.png" rel="lightbox[gallery]"><img src="images/e.png" alt="image 05" /></a></li>
-                <li><a href="images/f1.png" rel="lightbox[gallery]"><img src="images/f.png" alt="image 06" /></a></li>
-                <li><a href="images/g1.png" rel="lightbox[gallery]"><img src="images/g.png" alt="image 07" /></a></li>
-                <li><a href="images/h1.png" rel="lightbox[gallery]"><img src="images/h.png" alt="image 08" /></a></li>
-                <li><a href="images/i1.png" rel="lightbox[gallery]"><img src="images/i.png" alt="image 09" /></a></li>
-                <li><a href="images/j1.png" rel="lightbox[gallery]"><img src="images/j.png" alt="image 10" /></a></li>
-                <li><a href="images/k1.png" rel="lightbox[gallery]"><img src="images/k.png" alt="image 11" /></a></li>
-                <li><a href="images/l1.png" rel="lightbox[gallery]"><img src="images/l.png" alt="image 12" /></a></li>
-                <li><a href="images/m1.png" rel="lightbox[gallery]"><img src="images/m.png" alt="image 13" /></a></li>
-                <li><a href="images/n1.png" rel="lightbox[gallery]"><img src="images/n.png" alt="image 14" /></a></li>
-                <li><a href="images/o1.png" rel="lightbox[gallery]"><img src="images/o.png" alt="image 15" /></a></li>
-                <li><a href="images/p1.png" rel="lightbox[gallery]"><img src="images/p.png" alt="image 16" /></a></li>
-                <li><a href="images/q1.png" rel="lightbox[gallery]"><img src="images/q.png" alt="image 17" /></a></li>
-                <li><a href="images/r1.png" rel="lightbox[gallery]"><img src="images/r.png" alt="image 18" /></a></li>
-                <li><a href="images/s1.png" rel="lightbox[gallery]"><img src="images/s.png" alt="image 19" /></a></li>
-                <li><a href="images/t1.png" rel="lightbox[gallery]"><img src="images/t.png" alt="image 20" /></a></li>
-                <li><a href="images/u1.png" rel="lightbox[gallery]"><img src="images/u.png" alt="image 21" /></a></li>
-                <li><a href="images/v1.png" rel="lightbox[gallery]"><img src="images/v.png" alt="image 22" /></a></li>
-                <li><a href="images/w1.png" rel="lightbox[gallery]"><img src="images/w.png" alt="image 23" /></a></li>
-                <li><a href="images/x1.png" rel="lightbox[gallery]"><img src="images/x.png" alt="image 24" /></a></li>
-                <li><a href="images/y1.png" rel="lightbox[gallery]"><img src="images/y.png" alt="image 25" /></a></li>
-                <li><a href="images/z1.png" rel="lightbox[gallery]"><img src="images/z.png" alt="image 26" /></a></li>
-                <li><a href="images/aa1.png" rel="lightbox[gallery]"><img src="images/aa.png" alt="image 27" /></a></li>
-                <li><a href="images/bb1.png" rel="lightbox[gallery]"><img src="images/bb.png" alt="image 28" /></a></li>
-                <li><a href="images/cc1.png" rel="lightbox[gallery]"><img src="images/cc.png" alt="image 29" /></a></li>
-                <li><a href="images/dd1.png" rel="lightbox[gallery]"><img src="images/dd.png" alt="image 30" /></a></li>
-                <li><a href="images/ee.png" rel="lightbox[gallery]"><img src="images/ee1.png" alt="image 31" /></a></li>
-                <li><a href="images/ff.png" rel="lightbox[gallery]"><img src="images/ff1.png" alt="image 32" /></a></li>
-                <li><a href="images/gg.png" rel="lightbox[gallery]"><img src="images/gg1.png" alt="image 33" /></a></li>
-                <li><a href="images/hh1.png" rel="lightbox[gallery]"><img src="images/hh.png" alt="image 34" /></a></li>
-                <li><a href="images/ii1.png" rel="lightbox[gallery]"><img src="images/ii.png" alt="image 35" /></a></li>
-                <li><a href="images/jj1.png" rel="lightbox[gallery]"><img src="images/jj.png" alt="image 36" /></a></li>
-            </ul>
-            </div>
-        </div>
-    <centre>
 
-        <script type="text/javascript">
-            $(window).load(function () {
-                $('#slider').nivoSlider({
-                    controlNavThumbs: true,
-                    controlNavThumbsFromRel: true,
-                    directionNav: false, // Next and Prev
-                    keyboardNav: true, // Use left and right arrows
-                    pauseOnHover: true // Stop animation while hovering
-                });
-            });
-        </script>
+
+<!-- Photo Grid -->
+<div class="row" > 
+  <div class="column">
+    <img src="..\images\img.jpeg" style="width:100%">
+    <img src="..\images\img2.jpeg" style="width:100%">
+    <img src="..\images\img1.jpeg" style="width:100%">
+    <img src="..\images\img5.jpeg" style="width:100%">
+    <img src="..\images\img4.jpeg" style="width:100%">
+    <img src="..\images\img6.jpeg" style="width:100%">
+    
+  </div>
+  <div class="column">
+    <img src="..\images\img7.jpeg" style="width:100%">
+    <img src="..\images\img8.jpeg" style="width:100%">
+    <img src="..\images\img1.jpeg" style="width:100%">
+    <img src="..\images\img9.jpeg" style="width:100%">
+    <img src="..\images\img3.jpeg" style="width:100%">
+    <img src="..\images\img10.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="..\images\img3.jpeg" style="width:100%">
+    <img src="..\images\img4.jpeg" style="width:100%">
+    <img src="..\images\img1.jpeg" style="width:100%">
+    <img src="..\images\img7.jpeg" style="width:100%">
+    <img src="..\images\img2.jpeg" style="width:100%">
+    <img src="..\images\img9.jpeg" style="width:100%">
+    
+  </div>
+  <div class="column">
+    <img src="..\images\img2.jpeg" style="width:100%">
+    <img src="..\images\img5.jpeg" style="width:100%">
+    <img src="..\images\img3.jpeg" style="width:100%">
+    <img src="..\images\img8.jpeg" style="width:100%">
+    <img src="..\images\img1.jpeg" style="width:100%">
+    <img src="..\images\img9.jpeg" style="width:100%">
+  </div>
+</div>
+
 </body>
-
 </html>
