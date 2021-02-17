@@ -5,8 +5,20 @@ body{
   background-color:none;
   color:#FFF;
 }
+img{
+  height:40px;
+  align-items: center;
+  padding:15px;
+
+}
+.nav-text1{
+  width:14px;
+}
 section{
   text-align:center;
+}
+a{
+  font-size: 1.3em;
 }
 .footer #button{
 	width:35px;
