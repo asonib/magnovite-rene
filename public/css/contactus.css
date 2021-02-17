@@ -1,41 +1,111 @@
-body{
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Regular.eot");
-    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
-    font-weight: 400;
-}
-table{
-    width: 100%;
-    border-spacing: 15px;
-}
-td{
-    border: 2px solid black;
-    padding: 13px;
-    background-color:#330885;
-    color: white;
-    text-align: center;
-}
-td a{
-    color: white;
+@font-face {
+	font-family: 'DOS';
+	src: url("fonts/VCR_OSD_MONO_1.001.ttf");
+	font-weight: 300;
+	font-style: normal
 }
 
-#insta{
-    height: 550px;
-    max-height: 550px !important;
+body{
+    font-family: 'DOS';    
+}
+
+#main-iframe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#map{
+    filter: invert(100%);
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 85%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+#social-media h1,
+#social-media h2,
+#social-media h3{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#mail{
+    padding:15px;
+    margin: 15px;
+    background: #000000;
+    color: #FFBB18;  
+    padding-bottom: 0;
+    margin-bottom: 0px;      
+}
+
+#addr-mobile{
+    display: none;
+    padding:15px;
+    margin: 15px;
+    background: #000000;
+    color: #FFBB18;      
+}
+
+#addr-mobile a{
+    font-family: Arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#mail a{
+    font-family: Arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#social-icons{
+    padding:15px;
+    margin: 15px;
+    background: #000000;
+    color: #FFBB18;
+    padding: auto;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.soc-icon{
+    height: 50px;
 }
 
 #contact-incharge{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 650px;
+    text-align: center;
 }
 
-#contact-incharge div{    
-    margin: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+#contact-incharge div{
+    margin-top: 20px;        
+    margin-bottom: 20px;
     background-color: #000000;
     padding: 3px;
     opacity: 85%;
@@ -43,13 +113,13 @@ td a{
 
 .contact{
     display: inline-block;
-    height: 75px;
-    font-size: 20px;    
-    line-height: 40px;
-    border-radius: 25px;    
+    height: 45px;
+    font-size: 14px;    
+    line-height: 25px;
+    border-radius: 10px;    
     text-align: center;
     padding: 8px 5px 8px 5px !important;
-
+    margin-top: 20px;    
 }
 
 .contact a{
@@ -58,4 +128,61 @@ td a{
     padding-right: 10px;
     color: #FFBB18;
     text-decoration-line: none;
+}
+
+.contact p{
+    font-size: large; 
+    color: #ffffff; 
+    margin: 10px;
+}
+
+@media(max-width: 80%){
+    #top{
+        flex-direction: column;
+    }
+
+    #social-media{
+        margin-top: 20px;
+        max-width: 450px;
+        text-align: center;
+        font-size: smaller;
+    } 
+        
+}
+
+@media (max-width:811px) {
+    #top{
+        flex-direction: column;
+    }
+
+    #map {
+        display:none;
+    }
+
+    #addr-mobile {
+        display: block;
+        margin-bottom: 5px;
+        padding-bottom: 5px
+    }
+
+    #mail {
+        margin-top: 5px;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    #addr-mobile a {
+        font-size: 4vw;
+    }
+
+    #mail a {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:431px) {
+    #top{
+        flex-direction: column;
+    }
 }
