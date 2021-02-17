@@ -1559,7 +1559,7 @@ body {
 #contact-iframe{
 	padding-left: 85px;
 	width: 100%;
-	height: 480px;
+	height: 75vh;
 }
 
 #contact-heading{
@@ -1577,8 +1577,7 @@ body {
 	}
 	#contact-iframe{
 		padding-left: 0px;
-		width: 80vh;
-		height: 600px;
+		width: 80%;
 	}
 	
 	#contact-heading{
@@ -1589,10 +1588,13 @@ body {
 }
 
 @media (max-width: 900px){
+	.contact--lockup {
+		margin-top: 70px;
+	}
+
 	#contact-iframe{
 		padding-left: 0px;
 		width: 100%;
-		height: 600px;
 	}
 	
 	#contact-heading{
@@ -1610,7 +1612,6 @@ body {
 	#contact-iframe{
 		padding-left: 0px;
 		width: 100%;
-		height: 600px;
 	}
 
 	#contact-heading{

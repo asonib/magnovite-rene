@@ -48,7 +48,23 @@ body{
     padding:15px;
     margin: 15px;
     background: #000000;
-    color: #FFBB18;        
+    color: #FFBB18;  
+    padding-bottom: 0;
+    margin-bottom: 0px;      
+}
+
+#addr-mobile{
+    display: none;
+    padding:15px;
+    margin: 15px;
+    background: #000000;
+    color: #FFBB18;      
+}
+
+#addr-mobile a{
+    font-family: Arial;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 #mail a{
@@ -63,6 +79,8 @@ body{
     background: #000000;
     color: #FFBB18;
     padding: auto;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 #icons{
@@ -132,9 +150,34 @@ body{
         
 }
 
-@media (max-width:810px) {
+@media (max-width:811px) {
     #top{
         flex-direction: column;
+    }
+
+    #map {
+        display:none;
+    }
+
+    #addr-mobile {
+        display: block;
+        margin-bottom: 5px;
+        padding-bottom: 5px
+    }
+
+    #mail {
+        margin-top: 5px;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    #addr-mobile a {
+        font-size: 4vw;
+    }
+
+    #mail a {
+        font-size: 4vw;
     }
 }
 
