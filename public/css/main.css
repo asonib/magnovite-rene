@@ -297,6 +297,12 @@ body {
 	-webkit-text-size-adjust: 100%
 }
 
+@media screen and (max-width: 900px) {
+	body {
+		background-size:auto auto;
+	}
+}
+
 .l-viewport {
 	position: relative;
 	width: 100%;

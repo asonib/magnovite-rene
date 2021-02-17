@@ -59,11 +59,11 @@
           </header>
           <nav class="l-side-nav">
             <ul class="side-nav dos-font">
-              <li class="is-active"><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
-              <li><span></span></li>
+              <li class="is-active" id="custom-s-1"><span></span></li>
+              <li id="custom-s-2"><span></span></li>
+              <li id="custom-s-3"><span></span></li>
+              <li id="custom-s-4"><span></span></li>
+              <li id="custom-s-5"><span></span></li>
             </ul>
           </nav>
           <ul class="l-main-content main-content">
@@ -343,6 +343,18 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="js/functions-min.js"></script>
   <script src="js/particles.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        // For Events
+        jQuery(function($) { 
+            $('.cards').on('scroll', function(e) {
+                if ($(this).scrollTop() ==  0) { 
+                  $('#custom-s-1').click();
+                }
+            }); 
+        });
+    });
+  </script>
   <script>
     /* ---- particles.js config ---- */
 
