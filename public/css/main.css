@@ -1556,44 +1556,71 @@ body {
 	margin: 100px auto;
 }
 
-.contact--lockup iframe{
+#contact-iframe{
 	padding-left: 85px;
 	width: 100%;
-	height: 600px;
+	height: 480px;
 }
 
-.contact--lockup h1{
+#contact-heading{
 	font-family: 'DOS';
 	font-size: 38px;
 	margin: 0px;
+	text-align: center;
+	padding-left: 100px;
 }
 
 @media (max-width: 1180px) {
 	.contact--lockup {
-		max-width: 90%
+		max-width: 90%;
+		text-align: center;
+	}
+	#contact-iframe{
+		padding-left: 0px;
+		width: 80vh;
+		height: 600px;
+	}
+	
+	#contact-heading{
+		padding-left: 0px;
+		margin-top: 100px;
+		font-size: 32px;
 	}
 }
 
 @media (max-width: 900px){
-	.contact--lockup iframe{
+	#contact-iframe{
 		padding-left: 0px;
 		width: 100%;
 		height: 600px;
+	}
+	
+	#contact-heading{
+		padding-left: 0px;
+		margin-top: 120px;
+		font-size: 26px;
 	}
 }
 
 @media (max-width: 767px) {
 	.contact--lockup {
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		-ms-flex-pack: center;
-		justify-content: center
+		justify-content: center;
 	}
 	
-	.contact--lockup iframe{
+	#contact-iframe{
 		padding-left: 0px;
 		width: 100%;
-		height: 750px;
+		height: 600px;
+	}
+
+	#contact-heading{
+		padding-left: 0px;
+	}
+}
+
+@media(max-width: 480px){
+	#contact-heading{
+		margin-top: 0px;
 	}
 }
 

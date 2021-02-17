@@ -11,13 +11,69 @@ body{
 
 #main-iframe{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-#insta{
-    height: 550px;
-    max-height: 550px !important;
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#map{
+    filter: invert(100%);
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+}
+
+#social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 85%;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+#social-media h1,
+#social-media h2,
+#social-media h3{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#mail{
+    padding:15px;
+    margin: 15px;
+    background: #000000;
+    color: #FFBB18;        
+}
+
+#mail a{
+    font-family: Arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#social-icons{
+    padding:15px;
+    margin: 15px;
+    background: #000000;
+    color: #FFBB18;
+    padding: auto;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.soc-icon{
+    height: 50px;
 }
 
 #contact-incharge{
@@ -26,13 +82,12 @@ body{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 650px;
     text-align: center;
 }
 
 #contact-incharge div{
-    margin-top: 4px;        
-    margin-bottom: 4px;
+    margin-top: 20px;        
+    margin-bottom: 20px;
     background-color: #000000;
     padding: 3px;
     opacity: 85%;
@@ -43,10 +98,10 @@ body{
     height: 45px;
     font-size: 14px;    
     line-height: 25px;
-    border-radius: 25px;    
+    border-radius: 10px;    
     text-align: center;
     padding: 8px 5px 8px 5px !important;
-
+    margin-top: 20px;    
 }
 
 .contact a{
@@ -57,14 +112,34 @@ body{
     text-decoration-line: none;
 }
 
-@media (max-width:900px) {
-    #main-iframe{
+.contact p{
+    font-size: large; 
+    color: #ffffff; 
+    margin: 10px;
+}
+
+@media(max-width: 80%){
+    #top{
+        flex-direction: column;
+    }
+
+    #social-media{
+        margin-top: 20px;
+        max-width: 450px;
+        text-align: center;
+        font-size: smaller;
+    } 
+        
+}
+
+@media (max-width:810px) {
+    #top{
         flex-direction: column;
     }
 }
 
-@media (max-width:600px) {
-    #main-iframe{
+@media (max-width:431px) {
+    #top{
         flex-direction: column;
     }
 }
