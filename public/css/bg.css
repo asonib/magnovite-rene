@@ -38,3 +38,21 @@ div{
     font-family: monospace;
     text-shadow: blueviolet;
 }
+@media screen and (max-width:800px) {
+    .frame {
+      width:100%;
+    }
+    .img{
+        height:20px;
+           padding:5px;
+        
+      }
+
+  }
+  @media screen and (max-width:1024px) {
+    .frame {
+      width:100%;
+    }
+    
+    
+  }
