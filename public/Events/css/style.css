@@ -77,6 +77,10 @@ img {
   
 }
 
+.image1{
+  display: none;
+}
+
 @media (min-width: 40rem) {
   .cards_item {
     width: 50%;
@@ -87,6 +91,13 @@ img {
   .cards_item {
     width: 33.3333%;
   }
+}
+@media screen and (max-width:678px){
+  .image1{
+    display:block;
+  }
+
+
 }
 
 .card {
