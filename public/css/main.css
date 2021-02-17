@@ -647,7 +647,7 @@ body {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 182px;
+	width: 213px;
 	height: 70%;
 	max-height: 750px;
 	-webkit-box-orient: vertical;
@@ -763,12 +763,24 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 0 auto
+	margin: 0 auto;
+    margin-left: 15%;
 }
 
 @media (max-width: 1180px) {
 	.intro {
-		max-width: 100%
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+	.intro--banner {
+		margin-top:120px;
+	}
+}
+
+@media (max-width: 900px) {
+	.intro--banner {
+		margin-top: 50px;
 	}
 }
 
@@ -1475,7 +1487,7 @@ body {
 	}
 	.about--banner h2 {
 		margin-top: 0;
-		font-size: 55px
+		font-size: 50px
 	}
 	.about--banner h2::before {
 		top: 43px;
@@ -1711,7 +1723,7 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .gal_war{
@@ -1748,7 +1760,6 @@ body {
 @media (max-width: 1180px) {
 	.gallery {
 		max-width: 100%;
-		
 	}
 }
 @media(max-width:500px) and (max-height:700px){
