@@ -18,7 +18,25 @@ body {
   letter-spacing: 0;
   padding: 1rem;
   background-color: transparent;
-  padding-bottom: 5px;
+  padding-bottom: 85px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+#custom-color{
+  color: grey;
 }
 #custom-color{
   color: grey;
@@ -77,6 +95,10 @@ img {
   
 }
 
+.image1{
+  display: none;
+}
+
 @media (min-width: 40rem) {
   .cards_item {
     width: 50%;
@@ -87,6 +109,13 @@ img {
   .cards_item {
     width: 33.3333%;
   }
+}
+@media screen and (max-width:678px){
+  .image1{
+    display:block;
+  }
+
+
 }
 
 .card {
