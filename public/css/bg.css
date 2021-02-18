@@ -38,17 +38,14 @@ div{
     font-family: monospace;
     text-shadow: blueviolet;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:678px) {
     .frame {
       width:100%;
     }
-    .img{
-        height:20px;
-           padding:5px;
-        
+   #nav-text1{
+        display:none;
       }
-
-  }
+    
   @media screen and (max-width:1024px) {
     .frame {
       width:100%;
