@@ -1050,14 +1050,14 @@ body {
 }
 
 .work {
-	margin-right: 50px !important;
+	margin-right: 0px !important;
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 1114px;
-	max-width: 80%;
+	width: 100%;
+	max-width: 86%;
 	height: 100%;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -1627,6 +1627,8 @@ body {
 	.gallery{
 		display:block;
 		width:80%;
+		
+		
 	}
 	.dance_gal{
 		display: none;
@@ -2300,6 +2302,10 @@ body {
     background-image: url('../images/psy_events.jpg');
 }
 
+.card--5 .card__img, .card--5 .card__img--hover {
+    background-image: url('../images/img7.jpeg');
+}
+
 .card__like {
     width: 18px;
 }
@@ -2311,7 +2317,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 235px;
+    height: 212px;
   border-top-left-radius: 12px;
 border-top-right-radius: 12px;
 
@@ -2334,7 +2340,7 @@ border-top-right-radius: 12px;
     background-repeat: no-repeat;
     width: 100%;
   position: absolute;
-    height: 235px;
+    height: 212px;
   border-top-left-radius: 12px;
 border-top-right-radius: 12px;
 top: 0;
@@ -2353,9 +2359,46 @@ top: 0;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
 }
 
+.land-card {
+	margin-top:10px;
+	margin-right: 25px;
+	transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+	background-color: black;
+	display: inline-block;
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  }
+
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.10, 1.10);
+}
+
+@media (max-width: 800px) {
+	.card-dektop {
+		display: none;
+	}
+
+	.card-mobile {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 801px) {
+	.card-desktop {
+		display: inline-block;
+	}
+
+	.card-mobile {
+		display: none;
+	}
+}
+
+.land-card:hover {
+	box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+	transform: scale(1.10, 1.10);
 }
 
 @media screen and (max-width: 800px) {
@@ -2450,6 +2493,7 @@ border-bottom-right-radius: 12px;
 		margin-top: 50px;
 		padding:10px; 
 		width:100%;
+		height:75%;
 		display: inline-block;
 		
 	}
@@ -2531,3 +2575,94 @@ border-bottom-right-radius: 12px;
 		display: none;
 	}
 }
+/* Dev List @ Contact us  */
+.dev-list {
+	font-size: 30px;
+	position: absolute;
+	left: 35%;
+	bottom: 1em;
+	padding: 10px;
+	padding-left:20px;
+	width: 550px;
+	height: 100px;
+	opacity: 0;
+	z-index: 1;
+	font-size: 1em;
+	color: #fff;
+	transition-property: all;
+	transition-duration: .35s;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  }
+  .dev-list li {
+   font-size:15px;
+   padding : 1px;
+  }
+  
+  ul .dev-list{
+	  padding-bottom:0px;
+  }
+  
+  .triggerButton{
+	  position:fixed;
+	  width:60px;
+	  height:60px;
+	  bottom:40px;
+	  right: 1em;
+	  background-color: #536878;
+	  color:#FFF;
+	  border-radius:50px;
+	  text-align:center;
+	  box-shadow: 2px 2px 3px rgb(0, 0, 0);
+	  font-size:35px;
+	  border-width: 0;
+	  padding:1px;
+  }
+  
+  .triggerButton:hover ~ .dev-list {
+	opacity: 1;
+	background-color: #0F4C81;
+	transform: translateY(-5em);
+  }
+  
+  .triggerButton:hover ~ .dev-list:hover { opacity: .9; }
+  
+  #dev-list-mobile {
+	display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+	.dev-list{
+		display: none;
+	}  
+	#dev-list-mobile {
+		display: block;
+		font-size: 16px;
+		position: absolute;
+		padding: 10px;
+		width: 200px;
+		height: 220px;
+		opacity: 0;
+		bottom:30%;
+		right: 23%;
+		z-index: 1;
+		font-size: 1em;
+		color: #fff;
+		transition-property: all;
+		transition-duration: .35s;
+		transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	  }  
+	#dev-list-mobile list li {
+		font-size:13px;
+		padding : 1px;
+	   }
+	
+	.triggerButton:hover ~ #dev-list-mobile {
+		opacity: 1;
+		background-color: #0F4C81;
+		transform: translateY(-5em);
+	  }
+	  
+	.triggerButton:hover ~ #dev-list-mobile:hover { opacity: .9; }   
+  }
