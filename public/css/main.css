@@ -1345,10 +1345,19 @@ body {
 .about--banner h2 {
 	position: relative;
 	margin-top: 40px;
-	font-size: 55px;
+	font-size: 50px;
 	font-weight: 900;
 	line-height: 1;
 	z-index: 1
+}
+
+.about--banner h2 span {
+	font-size: 80px;
+}
+
+.about--banner p {
+	margin-top: 0;
+	width: 70%;
 }
 
 .about--banner a {
