@@ -1328,13 +1328,7 @@ body {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	margin: 0 auto
-}
-
-@media (max-width: 1180px) {
-	.about {
-		max-width: 100%
-	}
+	margin: 0 auto;
 }
 
 .about--banner {
@@ -1448,6 +1442,33 @@ body {
 	width: 100%;
 	text-align: justify;
 }
+
+@media (max-width: 1180px) {
+	.about {
+		max-width: 100%;
+		margin: 0;
+	}
+	
+	.about--banner h2{
+		margin-top: 60px;;
+	}
+}
+
+@media (max-width: 1050px){
+	.about--options{
+		display: none;
+	}
+
+	.about--banner {
+		height: auto;
+	}
+
+	.about--banner p,
+	.about--banner a{
+		font-size: 17px;
+	}
+}
+
 @media (max-width: 900px) {
 	.about--banner {
 		height: 305px
@@ -1464,6 +1485,16 @@ body {
 		margin-top: 10px;
 		font-size: 40px
 	}
+	
+	.about--banner h2 span{
+		font-size: 60px;
+	}
+
+	.about--banner p,
+	.about--banner a{
+		font-size: 17px;
+	}
+
 	.about--banner h2::before {
 		top: 28px;
 		left: 168px
@@ -1480,10 +1511,16 @@ body {
 	}
 }
 
+@media (max-width: 767px){
+	.about--banner{
+		height: auto;
+	}
+}
+
 @media (max-width: 600px) {
 	.about{
 		position: relative;
-		top: -17%;
+		/*top: -17%;*/
 	}
 	.about--banner {
 		height: auto
@@ -1512,16 +1549,22 @@ body {
 	.about--options {
 		display: none
 	}
-	.abt1{
-		display: block!important;
-		position: absolute!important;
-		top: 70%!important;
-		left: 0%;
+	.about--banner p{
+		width: auto;
+	}	
+}
+
+@media(max-width: 400px){
+	.about--banner h2 {
+		margin-top: 10px;
+		font-size: 35px
+	}
+	
+	.about--banner h2 span{
+		font-size: 45px;
 	}
 }
-.abt1{
-	display: none;
-}
+
 .contact {
 	position: fixed;
 	top: 0;
