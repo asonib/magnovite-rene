@@ -352,7 +352,7 @@ body {
 	width: 20%;
 	position: absolute;
 	top: 15%;
-	left: -4.5%;
+	left: -5.7%;
 }
 
 @media(max-width:500px){
@@ -641,7 +641,7 @@ body {
 }
 
 .side-nav {
-	color: #FFBB18
+	color: #FFBB18;
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -685,7 +685,7 @@ body {
 }
 
 .side-nav>li::before {
-	color: #FFBB18
+	color: #FFBB18;
 	position: absolute;
 	top: 3px;
 	left: 10px;
@@ -836,7 +836,7 @@ body {
 
 @media screen and  (min-width:800px) {
 	.mag-custom-logo {
-		margin-top: 30px;
+		margin-top: 50px;
 		display: block !important;
 		position: static;
 		width: 60%;
@@ -2328,7 +2328,7 @@ border-top-right-radius: 12px;
 
 .card__img--hover {
   transition: 0.2s all ease-out;
-  background-color:black
+  background-color:black;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2513,11 +2513,12 @@ border-bottom-right-radius: 12px;
   color: #FFBB18;
  }
 .abt {
-    width:555px;
+	width:615px;
+	line-height: 1.6;
  }
 .counter-sub-container{
 	margin : 20px;
-	color: : white;
+	color: white;
 }
 .counter-title span {
   font-weight: bold;
