@@ -1549,8 +1549,10 @@ body {
 	.about--options {
 		display: none
 	}
-	.about--banner p{
+	.about--banner p,
+	.about--banner a{
 		width: auto;
+		font-size:15px
 	}	
 }
 
