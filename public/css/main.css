@@ -908,6 +908,9 @@ body {
 	position: absolute;
 	top: 8%;
 	right: -13%;
+	margin: 0;
+    text-align: center;
+    padding: 0;
 }
 .cli {
 	display: inline-block;
@@ -924,8 +927,8 @@ body {
 }
 @media(max-width:1025px){
 	.timer{
-		position: absolute!important;
-		top: 18%!important;
+		position: absolute;
+		top: 18%;
 		right: 0%;
 	}
 }
@@ -955,7 +958,7 @@ body {
 	.timer{
 		position: absolute;
 		top: 8%;
-		right: -0% !important;
+		right: 0%;
 	}
 }
 
@@ -1005,9 +1008,11 @@ body {
 		display: none;
 	}
 	.timer{
+		width: 100vw;
 		position: absolute;
-		top: 88%!important;
-		right: 19% !important;
+		right: 0;
+		top: auto;
+		bottom: 50px;
 	}.cli {
 		font-size: 10px;
 		padding: 1em;
