@@ -514,13 +514,13 @@
         $('.intro-text').fadeOut(function () { //fadeout text
           $(this).html(words[intro_desktop_index = (intro_desktop_index + 1) % words.length]).fadeIn(); //update, count and fadeIn
         });
-      }, 5000); //2s
+      }, 7000);
 
       setInterval(function () {
         $('.intro-text-mobile').fadeOut(function () { //fadeout text
           $(this).html(words[intro_mobile_index = (intro_mobile_index + 1) % words.length]).fadeIn(); //update, count and fadeIn
         });
-      }, 5000); //2s
+      }, 7000);
 
       // For Events
       jQuery(function ($) {
