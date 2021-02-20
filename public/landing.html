@@ -8,8 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="HTML5 website template">
   <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
+  <meta name="author" content="Christites">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/new_gallery.css">
   <link rel="icon" type="image/png" href="images/logo_shadow.png" />
   <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 </head>
@@ -18,18 +19,28 @@
   <!-- particles.js container -->
   <div id="particles-js"></div>
 
+  <!-- The Modal -->
+  <div id="myModal" class="modal-gallery">
+    <span class="close-gallery">&times;</span>
+    <img class="modal-gallery-content" id="img-gallery">
+
+    <div id="caption-gallery"></div>
+    <a class="prev-gallery" onclick="changeimg(-1)">&#10094;</a>
+    <a class="next-gallery" onclick="changeimg(+1)">&#10095;</a>
+  </div>
+
   <!-- notification for small viewports and landscape oriented smartphones -->
   <div class="device-notification">
     <a class="device-notification--logo" href="#0">
       <img src="images/logo.png" height="50px" width="100px" alt="ChristLogo">
     </a>
     <p class="device-notification--message">
-      Magnovite+, CHRIST Kengeri's annual fest is scheduled for the 26th and 27th of March 2021. 
-      Encompassing over 5 Technical events, 9 Management events, 4 Architecture events, 4 Psychology events, 
-      and 4 Cultural events, Magnovite+ aims to push all boundaries by presenting a multi-disciplinary approach 
+      Magnovite+, CHRIST Kengeri's annual fest is scheduled for the 26th and 27th of March 2021.
+      Encompassing over 5 Technical events, 9 Management events, 4 Architecture events, 4 Psychology events,
+      and 4 Cultural events, Magnovite+ aims to push all boundaries by presenting a multi-disciplinary approach
       to innovation and fun!
-      The event has grown over the years and has turned more and more inclusive, with departments 
-      such as Engineering, Management, Architecture and Psychology all joining in! So come be a part 
+      The event has grown over the years and has turned more and more inclusive, with departments
+      such as Engineering, Management, Architecture and Psychology all joining in! So come be a part
       of this online wonder, come be a part of Magnovite+!
     </p>
   </div>
@@ -85,90 +96,93 @@
                       </svg>
                       <span class="btn-background"></span>
                     </button>
-                  <a><br><br>
-                  <a target="_blank" href="https://forms.gle/33ygj27TxSMudwzX6"
-                    style="text-decoration: none; color: white;">
-                    <button> Register Now - INDIANS
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                        </g>
-                      </svg>
-                      <span class="btn-background"></span>
-                    </button>
-                  <a><br><br>
-                  <a target="_blank"
-                    href="https://drive.google.com/file/d/1kzq3XI9Db45JveBWNrn9V_tMH7mtQrHB/view?usp=sharing"
-                    style="text-decoration: none; color: white;">
-                    <button> Download brochure&nbsp;
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                        </g>
-                      </svg>
-                      <span class="btn-background"></span>
-                    </button>
-                  <a><br><br>
-                  <a target="_blank"
-                    href="https://drive.google.com/file/d/1zXASS-cJLDaEgLCBaQFqmB2xDOqiNhQq/view?usp=sharing"
-                    style="text-decoration: none; color: white;">
-                    <button> Download Rulebook
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
-                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-                        </g>
-                      </svg>
-                      <span class="btn-background"></span>
-                    </button>
-                  <a>
-                  <img class="magn banner-img" src="images/logo_shadow.png" style="height: auto;" alt="magnovite">
+                    <a><br><br>
+                      <a target="_blank" href="https://forms.gle/33ygj27TxSMudwzX6"
+                        style="text-decoration: none; color: white;">
+                        <button> Register Now - INDIANS
+                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                            style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                            <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                              <path
+                                d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                            </g>
+                          </svg>
+                          <span class="btn-background"></span>
+                        </button>
+                        <a><br><br>
+                          <a target="_blank"
+                            href="https://drive.google.com/file/d/1kzq3XI9Db45JveBWNrn9V_tMH7mtQrHB/view?usp=sharing"
+                            style="text-decoration: none; color: white;">
+                            <button> Download brochure&nbsp;
+                              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                  <path
+                                    d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                </g>
+                              </svg>
+                              <span class="btn-background"></span>
+                            </button>
+                            <a><br><br>
+                              <a target="_blank"
+                                href="https://drive.google.com/file/d/1zXASS-cJLDaEgLCBaQFqmB2xDOqiNhQq/view?usp=sharing"
+                                style="text-decoration: none; color: white;">
+                                <button> Download Rulebook
+                                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                                    style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                                      <path
+                                        d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                                    </g>
+                                  </svg>
+                                  <span class="btn-background"></span>
+                                </button>
+                                <a>
+                                  <img class="magn banner-img" src="images/logo_shadow.png" style="height: auto;"
+                                    alt="magnovite">
                 </div>
                 <div class="about_mag-container" id="counters_1">
                   <div class="abt" style="color: white; font-family: Arial, Helvetica, sans-serif;">
-                    <h2 style="font-size: 30px;margin-bottom: -13px;" >About <span> Magnovite: </span></h2>
+                    <h2 style="font-size: 30px;margin-bottom: -13px;">About <span> Magnovite: </span></h2>
                     <p style="font-size:15px;margin-bottom: 30px;">
-                      Magnovite+, CHRIST Kengeri's annual fest is scheduled for the 26th and 27th of March 2021. 
-                      Encompassing over 5 Technical events, 9 Management events, 4 Architecture events, 4 Psychology events, 
-                      and 4 Cultural events, Magnovite+ aims to push all boundaries by presenting a multi-disciplinary approach 
+                      Magnovite+, CHRIST Kengeri's annual fest is scheduled for the 26th and 27th of March 2021.
+                      Encompassing over 5 Technical events, 9 Management events, 4 Architecture events, 4 Psychology
+                      events,
+                      and 4 Cultural events, Magnovite+ aims to push all boundaries by presenting a multi-disciplinary
+                      approach
                       to innovation and fun!
-                      The event has grown over the years and has turned more and more inclusive, with departments 
-                      such as Engineering, Management, Architecture and Psychology all joining in! So come be a part 
+                      The event has grown over the years and has turned more and more inclusive, with departments
+                      such as Engineering, Management, Architecture and Psychology all joining in! So come be a part
                       of this online wonder, come be a part of Magnovite+!
                     </p>
                   </div>
                   <div class="counter_container">
                     <div class="counter-sub-container">
-                        <div class="counter-box">
-                            <div class="counter c_0">21+</div>
-                        </div><br>
-                        <div class="counter-title">
-                          <span>EVENTS</span>
-                        </div>
+                      <div class="counter-box">
+                        <div class="counter c_0">21+</div>
+                      </div><br>
+                      <div class="counter-title">
+                        <span>EVENTS</span>
+                      </div>
                     </div>
                     <div class="counter-sub-container">
-                        <div class="counter-box">
-                            <div class="counter c_1">25+</div>
-                        </div><br>
-                        <div class="counter-title">
-                          <span>COLLEGES</span>
-                        </div>
+                      <div class="counter-box">
+                        <div class="counter c_1">25+</div>
+                      </div><br>
+                      <div class="counter-title">
+                        <span>COLLEGES</span>
+                      </div>
                     </div>
                     <div class="counter-sub-container">
-                        <div class="counter-box">
-                            <div class="counter c_2">600+</div>
-                        </div><br>
-                        <div class="counter-title">
-                            <span>PARTICIPANTS</span>
-                        </div>
+                      <div class="counter-box">
+                        <div class="counter c_2">600+</div>
+                      </div><br>
+                      <div class="counter-title">
+                        <span>PARTICIPANTS</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -286,7 +300,7 @@
                   </div>
                   <div class="card__img" style="height: 98px;"></div>
                   <a href="bgcultural.html" class="card_link">
-                      <div class="card__img--hover" style="height: 100%;"></div>
+                    <div class="card__img--hover" style="height: 100%;"></div>
                   </a>
                   <div class="card__info" style="position: relative; background:none;">
                     <h2 class="card__title" style="font-size: 40px;">Cultural Events</h2>
@@ -298,18 +312,72 @@
 
               <div class="gallery">
                 <h2>Gallery</h2>
-                <iframe src="gallery/gal1.html" height="70%" width="100%" frameborder="0"
-                  id="gal"></iframe>
+
+                <!-- Photo Grid -->
+                <div style="height:72vh">
+                <div class="row-gallery" style="overflow: auto; height: 100%;">
+                  <div class="column-gallery">
+                    <img class="img-gallery images" src="images\img.jpeg" style="width:100%" alt="img" loading="lazy"
+                      onclick="imgclick(0)">
+                    <img class="img-gallery images" src="images\img17.jpg" style="width:100%" alt="img17" loading="lazy"
+                      onclick="imgclick(1)">
+                    <img class="img-gallery images" src="images\img2.jpg" style="width:100%" alt="img2" loading="lazy"
+                      onclick="imgclick(2)">
+                    <img class="img-gallery images" src="images\img11.jpeg" style="width:100%" alt="img11"
+                      loading="lazy" onclick="imgclick(3)">
+                    <img class="img-gallery images" src="images\img4.jpg" style="width:100%" alt="img4" loading="lazy"
+                      onclick="imgclick(4)">
+                  </div>
+                  <div class="column-gallery">
+                    <img class="img-gallery images" src="images\img20.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(5)">
+                    <img class="img-gallery images" src="images\img6.jpeg" style="width:100%" loading="lazy"
+                      onclick="imgclick(6)">
+                    <img class="img-gallery images" src="images\img7.jpeg" style="width:100%" loading="lazy"
+                      onclick="imgclick(7)">
+                    <img class="img-gallery images" src="images\img10.jpeg" style="width:100%" loading="lazy"
+                      onclick="imgclick(8)">
+                    <img class="img-gallery images" src="images\img9.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(9)">
+
+                  </div>
+                  <div class="column-gallery">
+                    <img class="img-gallery images" src="images\img8.jpeg" style="width:100%" loading="lazy"
+                      onclick="imgclick(10)">
+                    <img class="img-gallery images" src="images\img13.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(11)">
+                    <img class="img-gallery images" src="images\img12.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(12)">
+                    <img class="img-gallery images" src="images\img3.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(13)">
+                    <img class="img-gallery images" src="images\img14.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(14)">
+                  </div>
+                  <div class="column-gallery">
+                    <img class="img-gallery images" src="images\img21.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(15)">
+                    <img class="img-gallery images" src="images\img16.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(16)">
+                    <img class="img-gallery images" src="images\img1.jpeg" style="width:100%" loading="lazy"
+                      onclick="imgclick(17)">
+                    <img class="img-gallery images" src="images\img18.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(18)">
+                    <img class="img-gallery images" src="images\img19.jpg" style="width:100%" loading="lazy"
+                      onclick="imgclick(19)">
+                  </div>
+                </div>
+                </div>
               </div>
             </li>
             <li class="l-section section" id="2">
               <div class="about">
                 <div class="about--banner">
                   <h2>About<br><span>Kengeri Campus</span></h2>
-                  <p>Established in the Mysore Road with finest ambiance of greenery and world-class infrastructure, 
-                    far from the hustle-bustle of the city, Kengeri Campus provides the experience of the traditional 
-                    world-class campus with department-specific buildings, libraries, research facilities and residences. 
-                    Kengeri Campus brings the academic and technology community together to develop transformative 
+                  <p>Established in the Mysore Road with finest ambiance of greenery and world-class infrastructure,
+                    far from the hustle-bustle of the city, Kengeri Campus provides the experience of the traditional
+                    world-class campus with department-specific buildings, libraries, research facilities and
+                    residences.
+                    Kengeri Campus brings the academic and technology community together to develop transformative
                     ideas and pioneering leaders in technologies for this digital era.</p>
                   <a target="_blank"
                     href="https://christuniversity.in/faculty-of-engineering/computer-science-and-engineering/festivals/magnovite">ABOUT
@@ -342,7 +410,7 @@
                   <a target="_blank" href="https://christuniversity.in/academics/Main-Campus/school-of-social-sciences">
                     <h3>School of Social Sciences</h3>
                   </a>
-                </div>                
+                </div>
               </div>
             </li>
             <li class="l-section section" id="3">
@@ -353,7 +421,7 @@
                   <!-- Dev List PC-->
                   <input class="triggerButton" type="button" value="</>">
                   <div class="dev-list">
-                   <h2 style="margin:0; padding:0;">Developers</h2>
+                    <h2 style="margin:0; padding:0;">Developers</h2>
                     <table style="width:100%">
                       <tr>
                         <td>Manjot Singh Sidhu</td>
@@ -368,39 +436,39 @@
                         <td>Avneet Dekatey</td>
                       </tr>
                     </table>
-                  </div> 
+                  </div>
                   <!-- Dev List PC-->
                   <!-- Dev List Mobiles-->
                   <div id="dev-list-mobile">
-                   <h2 style="margin:0; padding:0;">Developers</h2>
+                    <h2 style="margin:0; padding:0;">Developers</h2>
                     <table style="width:100%">
                       <tr>
                         <td>Manjot Singh Sidhu</td>
                       </tr>
-                      <tr>  
+                      <tr>
                         <td>Siddharth Patel</td>
                       </tr>
                       <tr>
                         <td>Shrey Limbani</td>
                       </tr>
-                      <tr>  
+                      <tr>
                         <td>Prabhnoor Singh</td>
                       </tr>
                       <tr>
                         <td>Chris Peter</td>
                       </tr>
-                      <tr>  
+                      <tr>
                         <td>Pritam Sahu</td>
-                      </tr> 
-                      <tr> 
+                      </tr>
+                      <tr>
                         <td>Kesaria Sachin</td>
                       </tr>
-                      <tr>  
+                      <tr>
                         <td>Avneet Dekatey</td>
                       </tr>
                     </table>
-                  </div> 
-                  <!-- Dev List Mobiles-->                 
+                  </div>
+                  <!-- Dev List Mobiles-->
                 </div>
               </div>
             </li>
@@ -422,19 +490,49 @@
   <script src="js/functions-min.js"></script>
   <script src="js/particles.min.js"></script>
   <script type="text/javascript">
-    $(document).ready(function() {
-        // For Events
-        jQuery(function($) { 
-            $('.cards').on('scroll', function(e) {
-                var elem = $(e.currentTarget);
-                if ($(this).scrollTop() ==  0) { 
-                  $('#custom-s-1').click();
-                } else if (elem[0].scrollHeight - elem.scrollTop() == elem.outerHeight()) {
-                  $('#custom-s-3').click();
-                }
-            }); 
+    $(document).ready(function () {
+      // For Events
+      jQuery(function ($) {
+        $('.cards').on('scroll', function (e) {
+          var elem = $(e.currentTarget);
+          if ($(this).scrollTop() == 0) {
+            $('#custom-s-1').click();
+          } else if (elem[0].scrollHeight - elem.scrollTop() == elem.outerHeight()) {
+            $('#custom-s-3').click();
+          }
         });
+      });
     });
+  </script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var imgarr = document.getElementsByClassName("images");
+    var modalImg = document.getElementById("img-gallery");
+    var captionText = document.getElementById("caption-gallery");
+    var imgid;
+    function imgclick(imgnum) {
+      imgid = imgnum;
+      modal.style.display = "block";
+      modalImg.src = imgarr[imgnum].src;
+
+    }
+    function changeimg(num) {
+      modal.style.display = "block";
+      if ((imgid + num) >= imgarr.length) {imgid = -1;}
+      if ((imgid + num) < 0) {imgid = imgarr.length}
+      modalImg.src = imgarr[imgid + num].src;
+      imgid = imgid + num;
+    }
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-gallery")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
   </script>
   <script>
     /* ---- particles.js config ---- */
@@ -571,7 +669,7 @@
     };
     requestAnimationFrame(update);
   </script>
-  
+
 </body>
 
 </html>
