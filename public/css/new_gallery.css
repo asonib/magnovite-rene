@@ -1,0 +1,259 @@
+  .row-gallery {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column-gallery {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column-gallery img {
+    cursor: pointer;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column-gallery {
+      -ms-flex: 40%;
+      flex: 40%;
+      max-width: 50%;
+	  
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 300px) {
+    .column-gallery {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+	  height:50%;
+    }
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px magenta;  
+  border-radius: 10px;
+} */
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: powderblue;
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: teal;
+  }
+
+  .img-gallery {
+    border: 1px solid #ddd;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded border */
+    width: 150px;
+    /* Set a small width */
+  }
+
+  /* Add a hover effect (blue shadow) */
+  .img-gallery:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+  /* The Modal (background) */
+  .modal-gallery {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    /* overflow: auto;  Enable scroll if needed  */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+  }
+
+  /* Modal Content (image) */
+  .modal-gallery-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    margin-top: 0%;
+    max-width: 700px;
+  }
+
+  /* Caption of Modal Image */
+  #caption-gallery {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  /* Add Animation */
+  .modal-gallery-content,
+  #caption-gallery {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+
+  /* The Close Button */
+  .close-gallery {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close-gallery:hover,
+  .close-gallery:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .prev-gallery,
+  .next-gallery {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .next-gallery {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev-gallery{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+  .prev-gallery:hover,
+  .next-gallery:hover {
+    background-color: teal;
+  }
+
+  
+  @media  (max-width: 890px) {
+    .modal-gallery-content {
+      width: 80%;
+      margin-top: 25%;
+
+    }
+
+    .modal-gallery {
+      padding: 20px;
+      height: 100%;
+    }
+
+  .prev-gallery,
+  .next-gallery {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 12px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  }
+
+ 
+  @media (max-width: 600px) {
+    .modal-gallery-content {
+      width: 90%;
+      margin-top: 55%;
+
+    }
+
+    .modal-gallery {
+      padding: 20px;
+      height: 100%;
+    }
+
+  .prev-gallery,
+  .next-gallery {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 8px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
