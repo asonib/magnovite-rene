@@ -1,4 +1,4 @@
-# magnovite-rene
+# MAGNOVITE+
 Magnovite is a Techno Cultural Fest organized by CHRIST University
 
 Tech Fest Website (static)
