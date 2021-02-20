@@ -2704,3 +2704,19 @@ border-bottom-right-radius: 12px;
 	  
 	.triggerButton:hover ~ #dev-list-mobile:hover { opacity: .9; }   
   }
+
+.sponsors {
+    background-color: #00000080;
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    border-radius: 40px 0px 0px 0px;
+}
+
+.sponsors .sponsors-text {
+    font-family: "DOS";
+    font-variant-caps: all-petite-caps;
+    font-size: 29px;
+    margin: 0;
+    text-align: center;
+}
