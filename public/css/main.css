@@ -929,13 +929,7 @@ body {
 		right: 0%;
 	}
 }
-@media(max-width:1440px){
-	.timer{
-		position: absolute!important;
-		top: 18%!important;
-		right: -13%;
-	}
-}
+
 @media (max-width: 900px) {
 	.intro--banner {
 		height: 380px
@@ -2266,9 +2260,9 @@ body {
 
 .magn {
 	height: 120%;
-	width: 60%;
-    left: 62% !important;
-    top: 27% !important;
+	width: 54%;
+    left: 66% !important;
+    top: 30% !important;
 }
 
 @keyframes blinker {
@@ -2601,8 +2595,8 @@ border-bottom-right-radius: 12px;
   color: #FFBB18;
  }
 .abt {
-	width:615px;
-	line-height: 1.6;
+	width:635px;
+	line-height: 1.4;
  }
 .counter-sub-container{
 	margin : 20px;
