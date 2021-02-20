@@ -687,7 +687,7 @@ body {
 .side-nav>li::before {
 	color: #FFBB18;
 	position: absolute;
-	top: 3px;
+	top: -18px;
 	left: 10px;
 	color:darkgrey;
 	font-size: 38px;
