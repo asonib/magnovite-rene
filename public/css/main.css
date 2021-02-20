@@ -2387,6 +2387,7 @@ top: 0;
 }
 
 .card {
+  z-index: 2;
   margin-right: 25px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: black;
