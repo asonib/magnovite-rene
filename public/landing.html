@@ -426,8 +426,11 @@
         // For Events
         jQuery(function($) { 
             $('.cards').on('scroll', function(e) {
+                var elem = $(e.currentTarget);
                 if ($(this).scrollTop() ==  0) { 
                   $('#custom-s-1').click();
+                } else if (elem[0].scrollHeight - elem.scrollTop() == elem.outerHeight()) {
+                  $('#custom-s-3').click();
                 }
             }); 
         });
