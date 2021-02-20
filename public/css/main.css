@@ -2612,8 +2612,7 @@ border-bottom-right-radius: 12px;
    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* TODO: Remove */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.counter_container {
 		display: none;
 	}
