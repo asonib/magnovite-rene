@@ -925,6 +925,7 @@ body {
 	display: block;
 	font-size: 20px;
 }
+
 @media(max-width:1025px){
 	.timer{
 		position: absolute;
@@ -1020,6 +1021,14 @@ body {
 
 	.cli > span {
 		font-size: 15px;
+	}
+	
+	#arr_events{
+		display: block;
+		position:absolute;
+		bottom:-25px;
+		left: 50%;
+		color: #c0c0c0;
 	}
 }
 
@@ -2751,5 +2760,63 @@ border-bottom-right-radius: 12px;
 		font-size: 3.6vw;
 		height: 150px;
 		margin: 0;
+	}
+}
+
+/* Page arrows for phone*/
+#arrow_events{
+	display: None;
+}
+
+@media (max-width: 600px) {
+
+	#arrow_events{
+		display: block;
+		position:absolute;
+		bottom:-25px;
+		left: 45%;
+		color: #c0c0c0;
+	}
+}
+
+#arrow_gallery{
+	display: None;
+}
+
+@media (max-width: 600px) {
+	#arrow_gallery{
+		display: block;
+		position:absolute;
+		bottom:0px;
+		left:40%;
+		color: #c0c0c0;
+	}
+}
+
+#arrow_aboutus{
+	display: None;
+}
+
+@media (max-width: 600px) {
+	#arrow_aboutus{
+		display: block;
+		position:absolute;
+		bottom:-105px;
+		left:35%;
+		color: #c0c0c0;
+	}
+}
+
+#arrow_contactus{
+	display: None;
+}
+
+@media (max-width: 600px) {
+	#arrow_contactus{
+		display: block;
+		position:absolute;
+		bottom: 0px;
+		left:35%;
+		color: #c0c0c0;
 	}
 }
